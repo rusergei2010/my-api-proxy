@@ -20,7 +20,7 @@ variables:
 
 
   DEFAULT_APIGEE_ENV: "dev"
-  DEFAULT_APIGEE_ORG: "apigeeorg"
+  DEFAULT_APIGEE_ORG: "APIGEE"
  
   #TEST_HOST: 34.117.38.184.nip.io
   TEST_HOST: "$(APIGEE_ORG)-$(APIGEE_ENV).apigee.net"
