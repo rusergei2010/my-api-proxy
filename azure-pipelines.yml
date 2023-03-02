@@ -18,12 +18,16 @@ variables:
   API_VERSION: "googleapi"
   
 
-
   DEFAULT_APIGEE_ENV: "dev"
   DEFAULT_APIGEE_ORG: "APIGEE"
  
+  
+  APIGEE_ENV: $(DEFAULT_APIGEE_ENV)
+  APIGEE_ORG: $(DEFAULT_APIGEE_ORG)
+
   #TEST_HOST: 34.117.38.184.nip.io
   TEST_HOST: "$(APIGEE_ORG)-$(APIGEE_ENV).apigee.net"
+  
 
   AUTHOR_EMAIL: $(APIGEE_USER)
   COMMIT_ID: $(Build.SourceVersion)
