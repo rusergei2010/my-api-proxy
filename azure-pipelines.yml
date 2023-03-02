@@ -149,7 +149,7 @@ steps:
     publishJUnitResults: true
     goals: "install -P$(API_VERSION) -Dapigee.org=$(APIGEE_ORG) -Denv=$(APIGEE_ENV) -Dapigee.username=$(APIGEE_USER) -Dapigee.password=$(APIGEE_PASSWORD) -Dapigee.config.file=EdgeConfig/edge.json -Dapigee.config.options=update"
   env:  
-      APIGEE_PASS: $(APIGEE_PASS)
+      APIGEE_PASS: $(APIGEE_PASSWORD)
         
 
 # Maven Deploy Apigee Configuration (from EdgeeConfig/edge.json): Apigee X/hybrid
@@ -209,7 +209,7 @@ steps:
     publishJUnitResults: true
     goals: "apigee-enterprise:deploy -P$(API_VERSION) -Dorg=$(APIGEE_ORG) -Denv=$(APIGEE_ENV) -Dpassword=$(APIGEE_PASSWORD) -Dusername=$(APIGEE_USER)" 
   env:
-    APIGEE_PASS: $(APIGEE_PASS)
+    APIGEE_PASS: $(APIGEE_PASSWORD)
 
 
 # Maven Deploy proxy bundle: Apigee X/hybrid
